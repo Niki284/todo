@@ -1,0 +1,263 @@
+@import url(reset.css);
+
+@font-face {
+    font-family: "Lato.B";
+    src: url(../fonts/AnyConv.com__Lato-Bold.woff2);
+}
+*{
+    padding: 0;
+    margin: 0;
+    transition: 0.4s ease-in-out all;
+}
+:root{
+    --color-primary:rgb(56, 56, 56);
+    --color-secunder:rgb(81, 136, 240);
+    --color-green:rgb(161, 226, 161);
+    --color-blue:hsl(219, 53%, 59%);
+    --color-geel:hsl(54, 100%, 62%);
+    --color-pars:hsl(271, 76%, 53%);
+    --color-bz:hsl(219, 51%, 63%);
+
+}
+h1, h2, h3, h4, h5, h6, p, i, li, a {
+    color: var(--color-primary) ;
+    font-family: "Lato.B";
+    text-decoration: none;
+    list-style-type: none;
+}
+img {
+    height: 100%;
+    width: 100%;
+}
+header {
+    height: 6rem;
+    background-color:var(--color-secunder) ;
+}
+a {
+    background: none;
+  cursor: pointer;
+}
+.navigatie {
+display: flex;
+align-items: center;
+justify-content: space-between ;
+height: 6rem;
+}
+.navigatie-logo {
+    display: flex;
+    margin-left: 2rem;
+    align-items: center;
+}
+.navigatie-foto {
+    display: block;
+    height: 3rem;
+    width: 3rem;
+}
+.navigatie-foto img{
+    height: 3rem;
+    width: 3rem;
+}
+
+.navigatie-title {
+    margin-left: 1.5rem;
+}
+.navigatie-title h1{
+    font-size: 2rem;
+}
+.login {
+    margin-right:2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.login:hover{
+    border: 1px solid var(--color-green) ;
+    border-radius: 10%;
+}
+.content {
+    display: flex;
+    height: 90vh;
+}
+.navigatie-sub {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: var(--color-blue);
+    height: 100%;
+    width: 11rem;
+    border: 1px solid black;
+}
+
+.navigatie-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navigatie-list li{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.navigatie-list li{
+    width: 10rem;
+    text-align: center;
+    font-size: 1.7rem;
+
+}
+.navigatie-list li:hover{
+    border: 1px solid var(--color-geel) ;
+    color: var(--color-pars) ;
+    /*box-shadow: -11.6px;*/
+    /* border: 1px solid darkgreen; */
+    border-radius: 10%;
+}
+.them select {
+    display: block;
+    text-align: center;
+    width: 10rem;
+    height: 2rem;
+}
+.them option , .them h3{
+    font-size: 2rem;
+    margin-left: 2rem;
+    color: var(--color-primary);
+}
+
+
+
+/*
+ test verber css
+*/
+.contents
+{
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    border: 1px solid black;
+    background-color:var(--color-bz)  ;
+}
+
+.block_1
+{
+    display: flex;
+    width: 30vw;
+    
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.block_2
+{
+    display: flex;
+    width: 30vw;
+    height: 8vw;
+}
+
+.text_2p label
+{
+    font-size: 2rem;
+    font-weight: bold; 
+    margin-left: 2rem;
+    color: var(--color-primary);
+}
+.text_2p h3   
+{
+    font-size: 2rem;
+    font-weight: bold; 
+}
+
+.content_input
+{
+    display: flex;
+    width: 30rem;
+    height: 4rem;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.content_input_1
+{
+    display: flex;
+    width: 26rem;
+    height: 8vw;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 2rem;
+}
+.content_input_1 p {
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+}
+
+input
+{
+    width: 22rem;
+    height: 2rem;
+    border-radius: 8px 0 0 8px;
+}
+
+button
+{
+    width: 4rem;
+    height: 2.4rem;
+    border-radius: 0 8px 8px 0;
+    outline: none;
+    transition: 0.8s;
+    background: none;
+  cursor: pointer;
+    background-color: #ffeb3b;
+}
+button:hover {
+    background-color: greenyellow;
+}
+button i {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+
+.text_2 ,.text_1{
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    background-color: azure;
+    border-radius: 0 8px 8px 0;
+    justify-content: space-between;
+}
+.knopje {
+    display: flex;
+    align-items: center;
+}
+
+.del {
+    display: block;
+    text-align: center;
+    
+    margin-left: 0.5rem; 
+}
+.del button{
+    display: block;
+    text-align: center;
+    background-color: --color-green;
+    border: 1px solid red;
+    border-radius: 4px; 
+    margin-left: 0.5rem; 
+}
+.del button:hover {
+    background-color: red;
+}
+.del img{
+    margin-top: 0.1rem;
+    height: 1.3rem;
+}
+.chek {
+   color: blanchedalmond;
+}
+.chek button:hover {
+    background-color: greenyellow;
+}
+
+
+

@@ -1,0 +1,39 @@
+<blockquote class="contents">
+            <div class="block_1"> 
+                <div class="text_2p">
+                   <label for="message">Message</label> 
+                </div>
+                <form action="/postTodo" method="post" class="content_input">
+                    <div class="input">
+                        <input id="grocery" name="name" type="text"></div>
+                    <div class="button_div"><button  type="submit" id="add"><i>+</i></button></div>
+                </form>
+                <div class="todo">
+                    {{#each todos}}
+                        <div class="text_1">
+                                <div class="text_2p">
+                                    <p>{{name}}</p>
+                                </div>
+                                <div class="knopje">
+                                    <form action="/deleteTodo"method="post">
+                                        <div class="del">
+                                            <input type="hidden" name="id"  value="{{id}}">
+                                            <button  type="submit">
+                                                <img src="/images/trash-arrow-up-solid.svg" alt=""><i class="fa-solid fa-trash-can-arrow-up"></i>
+                                            </button>
+                                        </div>
+                                    </form>
+                                    <form action="/updateTodo" method="post">
+                                        <div class="del chek">
+                                            <input id="grocery" name="name" type="hidden" value="{{name}}">
+                                            <button  type="submit"> <img src="/images/check-solid.svg" alt=""><i class="fa-solid fa-check"></i></button>
+                                        </div>
+                                    </form>
+                                </div>
+                            
+                        </div>
+                     {{/each}}
+                </div>
+            </div>
+            
+        </blockquote>
